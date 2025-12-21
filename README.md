@@ -1,1 +1,1 @@
-### trying react + css for the first time ^^
+### trying react + tailwind css for the first time ^^
