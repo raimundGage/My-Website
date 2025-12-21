@@ -1,5 +1,9 @@
 function Hello() {
-    return <div>Heyyyyyyyyyy</div>
+    return (
+        <section>
+            <div>Heyyyyyyyyy</div>
+        </section>
+    );
 }
 
 export default Hello;
