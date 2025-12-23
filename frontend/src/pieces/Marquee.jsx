@@ -1,11 +1,11 @@
-export default function Marquee({ marqueeText }) {
-    return (
+export const Marquee = ({ icon, name, from }) => {
+    return(
         <section>
-            <div className="bg-black overflow-hidden whitespace-nowrap">
-                <div className="animate-marquee inline-block text-green-400 font-courier">
-                    {marqueeText}
+            <article className="bg-black overflow-hidden whitespace-nowrap my-2">
+                <div className="text-neon-green inline-block font-serif animate-marquee">
+                    +-+ {icon} {name} from {from} +-+
                 </div>
-            </div>
+            </article>
         </section>
     );
 };

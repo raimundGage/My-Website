@@ -1,19 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-win-light: #ffffff;
-  --color-win-grey:  #c0c0c0;
-  --color-win-dark:  #808080;
+  --color-win-light:  #ffffff;
+  --color-win-grey:   #c0c0c0;
+  --color-win-dark:   #808080;
+  --color-neon-green: #4ae800;
 
-  --font-sans:    "Comic Sans MS";
-  --font-arial:   "Arial";
-  --font-courier: "New Courier";
-  --font-serif:   "Times New Roman";
+  --font-comic-sans: "Comic Sans MS"  ;
+  --font-arial:      "Arial"          ;
+  --font-courier:    "New Courier"    ;
+  --font-serif:      "Times New Roman";
 }
 
 @keyframes marquee {
-  0%   {transform: translateX(100%);}
-  100% {transform: translateX(-100%);}
+  0%   {transform: translateX(1250%)}
+  100% {transform: translateX(-110%)}
 }
 
 .animate-marquee {
