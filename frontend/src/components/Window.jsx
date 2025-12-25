@@ -1,4 +1,4 @@
-export const Window = ({ title }) => {
+export const Window = ({ title, content }) => {
     return (
         <section>
             <div className="bg-win-grey p-1 border-2 max-w-sm
@@ -16,8 +16,8 @@ export const Window = ({ title }) => {
                 </div>
 
                 {/* Content */}
-                <div>
-
+                <div className="bg-win-light">
+                    {content}
                 </div>
 
             </div>
