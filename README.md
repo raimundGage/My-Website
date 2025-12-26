@@ -1,1 +1,1 @@
-### trying tailwind css specifically for this branch ^^
+### A personal website for my main interests using React, Vite, and Tailwind ^^
