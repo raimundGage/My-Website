@@ -1,37 +1,16 @@
-import { Greetings } from "./Greetings";
-import { Howdy } from "./Howdy";
-
 export const ConditionalRender = () => {
-  let isDisplayComponent = true;
-  let isDisplayJSX = true;
+  let chomperLine;
+  const isDisplay = false;
 
-  /* 
-  if (isDisplayJSX) {
-    return (
-      <section>
-        <h3>Hey,hey ,hey! You found Me! 🐊</h3>
-      </section>
-    );
+  if (isDisplay) {
+    chomperLine = <p>NOM! NOM! NOM!</p>;
   } else {
-    return (
-      <section>
-        <p>Mmm.. yeah. I really don't got anything else to say!</p>
-      </section>
-    );
-  }
- */
+    chomperLine = <p>CHOMP! CHOMP! CHOMP!</p>;
+  };
 
-  if (isDisplayComponent) {
-    return (
-      <section>
-        <Greetings />
-      </section>
-    );
-  } else {
-    return (
-      <section>
-        <Howdy />
-      </section>
-    );
-  }
+  return (
+    <section>
+      <div>{chomperLine}</div>
+    </section>
+  );
 };
