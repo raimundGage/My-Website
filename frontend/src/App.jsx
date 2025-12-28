@@ -1,11 +1,11 @@
 import { Plants } from "./components/Plants";
-import { ConditionalRender } from "./components/ConditionalRender";
+import { ChomperSay } from "./components/ChomperSay";
 
 function App() {
   return (
     <section className="App">
       <Plants />
-      <ConditionalRender />
+      <ChomperSay />
     </section>
   );
 }
