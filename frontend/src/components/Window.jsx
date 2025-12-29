@@ -11,9 +11,9 @@ export const Window = ({ title, content, contentImage }) => {
           <span className="text-white text-xs font-bold tracking-wide">{ title }</span>
 
           <div className="flex gap-1">  
-            <button className="bg-win-grey border-[1.25px] border-l-win-light border-t-win-light border-r-black border-b-black px-1 text-xs font-bold leading-none hover:border-l-black hover:border-t-black hover:border-r-win-light hover:border-b-win-light cursor-pointer">?</button>
-            <button className="bg-win-grey border-[1.25px] border-l-win-light border-t-win-light border-r-black border-b-black px-1 text-xs font-bold leading-none hover:border-l-black hover:border-t-black hover:border-r-win-light hover:border-b-win-light cursor-pointer">-</button>
-            <button className="bg-win-grey border-[1.25px] border-l-win-light border-t-win-light border-r-black border-b-black px-1 text-xs font-bold leading-none hover:border-l-black hover:border-t-black hover:border-r-win-light hover:border-b-win-light cursor-pointer">X</button>
+            <button className="bg-win-grey border-[1.25px] border-l-win-light border-t-win-light border-r-black border-b-black px-1 text-xs font-bold leading-none active:border-l-black active:border-t-black active:border-r-win-light active:border-b-win-light cursor-pointer">?</button>
+            <button className="bg-win-grey border-[1.25px] border-l-win-light border-t-win-light border-r-black border-b-black px-1 text-xs font-bold leading-none active:border-l-black active:border-t-black active:border-r-win-light active:border-b-win-light cursor-pointer">-</button>
+            <button className="bg-win-grey border-[1.25px] border-l-win-light border-t-win-light border-r-black border-b-black px-1 text-xs font-bold leading-none active:border-l-black active:border-t-black active:border-r-win-light active:border-b-win-light cursor-pointer">X</button>
           </div>
         </div>
 
