@@ -1,11 +1,8 @@
+import { ChomperLine1 } from "../lines/ChomperLine1";
+import { ChomperLine2 } from "../lines/ChomperLine2";
+
 export const ChomperSay = () => {
   let isDisplay = false;
-  const chomperLine1 = <p>NOM! NOM!</p>;
-  const chomperLine2 = <p>BUUURRRPP!</p>;
 
-  if(isDisplay) {
-    return chomperLine1;
-  } else {
-    return chomperLine2;
-  };
+  return isDisplay ? <ChomperLine1 /> : <ChomperLine2 />;
 };
