@@ -1,38 +1,36 @@
-import { Plant } from "./Plant";
+import { Plant } from './Plant';
 
 export const Plants = () => {
   let myPlants = [
     {
-      name: "Primal Peashooter",
-      cost: 175,
-      mintFamilyEmoji: "🔫",
+      plantType       : "Primal Peashooter",
+      plantName       : "Ralph",
+      cost            : 175,
+      mintFamilyEmoji : "🔫"
     },
     {
-      name: "Parsnip",
-      cost: 125,
-      mintFamilyEmoji: "👊",
+      plantType       : "Parsnip",
+      plantName       : "Billy",
+      cost            : 125,
+      mintFamilyEmoji : "👊"
     },
     {
-      name: "Hurrikale",
-      cost: 100,
-      mintFamilyEmoji: "❄️",
-    },
+      plantType       : "Hurrikale",
+      plantName       : "Rando",
+      cost            : 100,
+      mintFamilyEmoji : "❄️"
+    }
   ];
 
   return (
-    <section>
-      <ol className="list-decimal list-inside">
-        {myPlants.map((myPlant) => {
-          return (
-            <Plant
-              key={myPlant.name}
-              name={myPlant.name}
-              cost={myPlant.cost}
-              mintFamilyEmoji={myPlant.mintFamilyEmoji}
-            />
-          );
-        })}
-      </ol>
-    </section>
+    <>
+      {myPlants.map((plant) => {
+        return (
+          <Plant key={plant.plantType}
+          plantType={plant.plantType} plantName={plant.plantName} 
+          cost={plant.cost} mintFamilyEmoji={plant.mintFamilyEmoji} />
+        );
+      })}
+    </>
   );
 };

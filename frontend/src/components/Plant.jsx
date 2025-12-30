@@ -1,10 +1,8 @@
-export const Plant = ({ name, cost, mintFamilyEmoji }) => {
+export const Plant = ({ plantType, plantName, cost, mintFamilyEmoji }) => {
   return (
     <>
-      {cost > 100 ? (
-        <li>
-          { mintFamilyEmoji } { name } { cost } ☀️
-        </li>
+      { cost > 100 ? (
+        <li> Species: {mintFamilyEmoji} {plantType}<br/> Name: {plantName}<br/> Cost: {cost}<br/> </li>
       ) : (
         ""
       )}

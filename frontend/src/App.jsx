@@ -4,8 +4,8 @@ import { ChomperSay } from "./components/ChomperSay";
 function App() {
   return (
     <section className="App">
-      <Plants />
       <ChomperSay />
+      <Plants />
     </section>
   );
 }
