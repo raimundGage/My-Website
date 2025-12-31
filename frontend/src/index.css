@@ -5,7 +5,7 @@
   --color-win-grey:   #c0c0c0;
   --color-win-dark:   #808080;
   --color-win-blue:   #000080;
-  --color-neon-green: #4ae800;
+  --color-neon-green: #00c951;
 
   --font-comic-sans: "Comic Sans MS"  ;
   --font-arial:      "Arial"          ;
@@ -14,11 +14,11 @@
 }
 
 @keyframes marquee {
-  from {transform: translateX( 100cqw)}
-  to   {transform: translateX(-100% )}
+  0%   {transform: translateX( 100cqw);}
+  100% {transform: translateX(-100%  );}
 }
 
-.animate-marquee {
-  display: inline-block;
+.marquee {
+  display:   inline-block;
   animation: marquee 5s linear infinite;
 }

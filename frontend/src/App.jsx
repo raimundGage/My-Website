@@ -1,9 +1,13 @@
+import { Marquee } from "./pieces/Marquee";
 import { Button } from "./pieces/Button";
 import { Window } from "./components/Window";
 
 function App() {
   return (
     <article className="App">
+
+      <Marquee marqueeText={"Gage"}/>
+      <Marquee marqueeText={"Gage"}/>
 
       <Button buttonLabel={"Meow"} />
 
